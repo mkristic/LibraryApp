@@ -24,6 +24,12 @@ namespace Library.WebApi.Controllers
                 Year = 1890
             }
         };
+        /*
+        private List<Book> FilterBooks(string? title, string? author, int year = 1890 )
+        {
+
+        }
+        */
 
         [HttpGet("GetBooks")]
         public IActionResult Get()
@@ -51,7 +57,7 @@ namespace Library.WebApi.Controllers
             book.Id = books.Max(book => book.Id) + 1;
             books.Add(book);
 
-            return CreatedAtAction(nameof(GetBook), new { id = book.Id}, book);
+            return Ok(book);
         }
 
         [HttpPut("{id}")]
@@ -85,6 +91,8 @@ namespace Library.WebApi.Controllers
 
             return NoContent();
         }
+
+        
 
     }
 }
