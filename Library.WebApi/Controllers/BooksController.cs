@@ -24,18 +24,15 @@ namespace Library.WebApi.Controllers
                 Year = 1890
             }
         };
-        /*
-        private List<Book> FilterBooks(string? title, string? author, int year = 1890 )
-        {
-
-        }
-        */
-
+        
+        
         [HttpGet("GetBooks")]
         public IActionResult Get()
         {
             return Ok(books);
         }
+
+
 
 
         [HttpGet("{id}")]
