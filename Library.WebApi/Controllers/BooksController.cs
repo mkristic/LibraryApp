@@ -16,24 +16,83 @@ namespace Library.WebApi.Controllers
                 Author = "Franz Kafka",
                 Year = 1926
             },
+
             new Book
             {
                 Id = 2,
                 Title = "Slika Doriana Graya",
                 Author = "Oscar Wilde",
                 Year = 1890
+            },
+
+            new Book
+            {
+                Id = 3,
+                Title = "GOT",
+                Author = "GRRM",
+                Year = 1996
+            },
+
+            new Book
+            {
+                Id = 4,
+                Title = "Harry Potter 6",
+                Author = "JKR",
+                Year = 2005
+            },
+
+            new Book
+            {
+                Id = 5,
+                Title = "Harry Potter 5",
+                Author = "JKR",
+                Year = 2003
             }
         };
-        
-        
-        [HttpGet("GetBooks")]
-        public IActionResult Get()
+      
+        private List<Book> FilterByYear(int year = 2000)
         {
-            return Ok(books);
+            var filteredByYear = books.Where(book => book.Year == year).ToList();
+
+            return filteredByYear;
+        }
+
+        private List<Book> FilterByAuthor(string author = "Unknown")
+        {
+            var filteredByAuthor = books.Where(book => book.Author.Contains(author, StringComparison.OrdinalIgnoreCase)).ToList();
+
+            return filteredByAuthor;
+        }
+
+        private List<Book> FilterByTitle(string title = "Unknown")
+        {
+            var filteredByTitle = books.Where(book => book.Title.Contains(title, StringComparison.OrdinalIgnoreCase)).ToList();
+
+            return filteredByTitle;
         }
 
 
+        [HttpGet("GetBooks")]
+        public IActionResult Get([FromQuery] string? title, [FromQuery] string? author, [FromQuery] int? year)
+        {
+            if (year.HasValue)
+            {
+                return Ok(FilterByYear(year.Value));
+            }
 
+            if (author != null)
+            {
+                return Ok(FilterByAuthor(author));
+            }
+
+            if (title != null)
+            {
+                return Ok(FilterByTitle(title));
+            }
+
+
+            return Ok(books);
+        }
 
         [HttpGet("{id}")]
         public IActionResult GetBook(int id)
