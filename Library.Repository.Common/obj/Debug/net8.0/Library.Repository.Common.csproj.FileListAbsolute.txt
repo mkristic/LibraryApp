@@ -1,0 +1,12 @@
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\bin\Debug\net8.0\Library.Repository.Common.deps.json
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\bin\Debug\net8.0\Library.Repository.Common.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\bin\Debug\net8.0\Library.Repository.Common.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.AssemblyInfoInputs.cache
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.AssemblyInfo.cs
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.sourcelink.json
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\refint\Library.Repository.Common.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\Library.Repository.Common.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Repository.Common\obj\Debug\net8.0\ref\Library.Repository.Common.dll

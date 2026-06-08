@@ -1,0 +1,12 @@
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\bin\Debug\net8.0\Library.Models.deps.json
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\bin\Debug\net8.0\Library.Models.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\bin\Debug\net8.0\Library.Models.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.AssemblyInfoInputs.cache
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.AssemblyInfo.cs
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.csproj.CoreCompileInputs.cache
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.sourcelink.json
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\refint\Library.Models.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\Library.Models.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Models\obj\Debug\net8.0\ref\Library.Models.dll

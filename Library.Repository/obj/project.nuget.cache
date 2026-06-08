@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JxOnAkfH6bs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\Library.Repository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marija\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marija\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marija\\.nuget\\packages\\npgsql\\10.0.3\\npgsql.10.0.3.nupkg.sha512",
+    "C:\\Users\\Marija\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.11\\system.diagnostics.diagnosticsource.9.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
