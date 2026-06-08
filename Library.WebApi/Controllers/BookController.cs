@@ -13,13 +13,12 @@ namespace Library.WebApi.Controllers
     public class BookController : ControllerBase
     {               
         [HttpGet("GetBooks")]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-
             try
             {
                 var bookService = new BookService();
-                var books = bookService.GetAll();
+                var books = await bookService.GetAllAsync();
 
                 return Ok(books);
             }
@@ -30,12 +29,12 @@ namespace Library.WebApi.Controllers
         }
         
         [HttpGet("GetBooks/Filter")]
-        public IActionResult GetFiltered([FromQuery] BookFilter filter)
+        public async Task<IActionResult> GetFilteredAsync([FromQuery] BookFilter filter)
         {
             try
             {
                 var bookService = new BookService();
-                var books = bookService.GetFiltered(filter);
+                var books = await bookService.GetFilteredAsync(filter);
 
                 if (!books.Any())
                 {
@@ -51,12 +50,12 @@ namespace Library.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetBook(int id)
+        public async Task<IActionResult> GetBookAsync(int id)
         {
             try
             {
                 var bookService = new BookService();
-                var book = bookService.GetById(id);
+                var book = await bookService.GetByIdAsync(id);
 
                 if (book == null)
                 {
@@ -72,12 +71,12 @@ namespace Library.WebApi.Controllers
         }
         
         [HttpPost("PostBook")]
-        public IActionResult Post([FromBody] Book book)
+        public async Task<IActionResult> PostAsync([FromBody] Book book)
         {
             try 
             {
                 var bookService = new BookService();
-                var isAdded = bookService.Add(book);
+                var isAdded = await bookService.AddAsync(book);
 
                 if (!isAdded)
                 {
@@ -93,12 +92,12 @@ namespace Library.WebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Book updatedBook)
+        public async Task<IActionResult> PutAsync(int id, [FromBody] Book updatedBook)
         {
             try 
             {
                 var bookService = new BookService();
-                var isUpdated = bookService.Update(id, updatedBook);
+                var isUpdated = await bookService.UpdateAsync(id, updatedBook);
 
                 if (!isUpdated)
                 {
@@ -115,12 +114,12 @@ namespace Library.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
             try
             {
                 var bookService = new BookService();
-                var isDeleted = bookService.Delete(id);
+                var isDeleted = await bookService.DeleteAsync(id);
 
                 if (!isDeleted)
                 {

@@ -14,34 +14,34 @@ namespace Library.Service
     {
         private readonly BookRepository bookRepository = new BookRepository();
 
-        public List<Book> GetAll()
+        public async Task<List<Book>> GetAllAsync()
         {  
-            return bookRepository.GetAll(); 
+            return await bookRepository.GetAllAsync(); 
         }
 
-        public Book GetById(int id)
+        public async Task<Book?> GetByIdAsync(int id)
         {
-            return bookRepository.GetById(id);
+            return await bookRepository.GetByIdAsync(id);
         }
 
-        public List<Book> GetFiltered(BookFilter filter)
+        public async Task<List<Book>> GetFilteredAsync(BookFilter filter)
         {
-            return bookRepository.GetFiltered(filter);
+            return await bookRepository.GetFilteredAsync(filter);
         }
 
-        public bool Add(Book newBook)
+        public async Task<bool> AddAsync(Book newBook)
         {
-            return bookRepository.Add(newBook);
+            return await bookRepository.AddAsync(newBook);
         }
 
-        public bool Update(int id, Book updatedBook)
+        public async Task<bool> UpdateAsync(int id, Book updatedBook)
         {
-            return bookRepository.Update(id, updatedBook);
+            return await bookRepository.UpdateAsync(id, updatedBook);
         }
 
-        public bool Delete(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            return bookRepository.Delete(id);
+            return await bookRepository.DeleteAsync(id);
         }
     }
 }

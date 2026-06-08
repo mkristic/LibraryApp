@@ -14,7 +14,7 @@ namespace Library.Repository
         private readonly string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=praksa;Database=Library";
 
         // GET ALL
-        public List<Book> GetAll()
+        public async Task<List<Book>>  GetAllAsync()
         {
             var books = new List<Book>();
 
@@ -24,9 +24,9 @@ namespace Library.Repository
 
             connection.Open();
 
-            using NpgsqlDataReader reader = command.ExecuteReader();
+            using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
 
-            while (reader.Read())
+            while (await reader.ReadAsync())
             {
                 books.Add(new Book
                 { 
@@ -44,7 +44,7 @@ namespace Library.Repository
         }
 
         // GET FILTERED 
-        public List<Book> GetFiltered(BookFilter filter)
+        public async Task<List<Book>> GetFilteredAsync(BookFilter filter)
         {
             var books = new List<Book>();
 
@@ -85,9 +85,9 @@ namespace Library.Repository
 
             connection.Open();
 
-            using NpgsqlDataReader reader = command.ExecuteReader();
+            using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
 
-            while (reader.Read())
+            while (await reader.ReadAsync())
             {
                 books.Add(new Book
                 {
@@ -105,10 +105,8 @@ namespace Library.Repository
         }
 
         // GET BY ID
-        public Book? GetById(int id)
+        public async Task<Book?> GetByIdAsync(int id)
         {
-            var book = new Book();
-
             using NpgsqlConnection connection = new NpgsqlConnection(connectionString);
             string commandText = $"SELECT * FROM \"Book\" WHERE \"Id\" = @Id";
             using NpgsqlCommand command = new NpgsqlCommand(commandText, connection);
@@ -117,9 +115,9 @@ namespace Library.Repository
 
             connection.Open();
 
-            using NpgsqlDataReader reader = command.ExecuteReader();
+            using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
 
-            if (reader.Read())
+            if (await reader.ReadAsync())
             {
                 return new Book
                 {
@@ -136,7 +134,7 @@ namespace Library.Repository
         }
 
         // POST
-        public bool Add(Book book)
+        public async Task<bool> AddAsync(Book book)
         {
             using NpgsqlConnection connection = new NpgsqlConnection(connectionString);
             string commandText = $"INSERT INTO \"Book\" (\"Id\", \"Title\", \"Author\", \"Year\") VALUES (@Id, @Title, @Author, @Year)";
@@ -148,14 +146,14 @@ namespace Library.Repository
             command.Parameters.AddWithValue("Year", book.Year);
 
             connection.Open();
-            int addedRows = command.ExecuteNonQuery();
+            int addedRows = await command.ExecuteNonQueryAsync();
             connection.Close();
 
             return addedRows > 0;
         }
 
         // UPDATE
-        public bool Update(int id, Book updatedBook)
+        public async Task<bool> UpdateAsync(int id, Book updatedBook)
         {
             using NpgsqlConnection connection = new NpgsqlConnection(connectionString);
             string commandText = $"UPDATE \"Book\" SET \"Title\" = @Title, \"Author\" = @Author, \"Year\" = @Year WHERE \"Id\" = @Id";
@@ -167,14 +165,14 @@ namespace Library.Repository
             command.Parameters.AddWithValue("Year", updatedBook.Year);
 
             connection.Open();
-            int addedRows = command.ExecuteNonQuery();
+            int addedRows = await command.ExecuteNonQueryAsync();
             connection.Close();
 
             return addedRows > 0;
         }
 
         // DELETE
-        public bool Delete(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             using NpgsqlConnection connection = new NpgsqlConnection(connectionString);
             string commandText = $"DELETE FROM \"Book\" WHERE \"Id\" = @Id";
@@ -183,7 +181,7 @@ namespace Library.Repository
             command.Parameters.AddWithValue("Id", id);
 
             connection.Open();
-            int addedRows = command.ExecuteNonQuery();
+            int addedRows = await command.ExecuteNonQueryAsync();
             connection.Close();
 
             return addedRows > 0;

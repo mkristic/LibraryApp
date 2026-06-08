@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{B7343AEE-51DE-473D-B933-98A08C617482}|Library.Repository\\Library.Repository.csproj|solutionrelative:library.repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E1BEC60-E124-457C-B364-B8F933B21B45}|Library.Common\\Library.Common.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.common\\bookfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E1BEC60-E124-457C-B364-B8F933B21B45}|Library.Common\\Library.Common.csproj|solutionrelative:library.common\\bookfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2D85BC18-DD82-4385-AD02-F606C0606C80}|Library.Service\\Library.Service.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D85BC18-DD82-4385-AD02-F606C0606C80}|Library.Service\\Library.Service.csproj|solutionrelative:library.service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E1BEC60-E124-457C-B364-B8F933B21B45}|Library.Common\\Library.Common.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.common\\bookfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E1BEC60-E124-457C-B364-B8F933B21B45}|Library.Common\\Library.Common.csproj|solutionrelative:library.common\\bookfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,13 +30,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BookFilter.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\BookFilter.cs",
               "RelativeDocumentMoniker": "Library.Common\\BookFilter.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\BookFilter.cs",
               "RelativeToolTip": "Library.Common\\BookFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T11:11:28.384Z",
               "EditorCaption": ""
@@ -49,33 +49,33 @@
               "RelativeDocumentMoniker": "Library.Repository\\BookRepository.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\BookRepository.cs",
               "RelativeToolTip": "Library.Repository\\BookRepository.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAYwDMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAowGwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T07:58:25.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Service\\BookService.cs",
               "RelativeDocumentMoniker": "Library.Service\\BookService.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Service\\BookService.cs",
               "RelativeToolTip": "Library.Service\\BookService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T08:23:17.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Library.WebApi\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Controllers\\BookController.cs",
               "RelativeToolTip": "Library.WebApi\\Controllers\\BookController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCUAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-05T10:10:59.56Z",
               "EditorCaption": ""
