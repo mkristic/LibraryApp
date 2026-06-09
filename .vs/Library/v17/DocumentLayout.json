@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\library.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\library.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7343AEE-51DE-473D-B933-98A08C617482}|Library.Repository\\Library.Repository.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7343AEE-51DE-473D-B933-98A08C617482}|Library.Repository\\Library.Repository.csproj|solutionrelative:library.repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D85BC18-DD82-4385-AD02-F606C0606C80}|Library.Service\\Library.Service.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D85BC18-DD82-4385-AD02-F606C0606C80}|Library.Service\\Library.Service.csproj|solutionrelative:library.service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365A8962-0CA9-497C-9D04-E00874AD855F}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7343AEE-51DE-473D-B933-98A08C617482}|Library.Repository\\Library.Repository.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7343AEE-51DE-473D-B933-98A08C617482}|Library.Repository\\Library.Repository.csproj|solutionrelative:library.repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C49F14EB-E15E-414F-94A4-6BE14EF7BBE6}|Library.Repository.Common\\Library.Repository.Common.csproj|c:\\users\\marija\\source\\repos\\libraryapp\\library.repository.common\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +38,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Library.WebApi",
+              "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Library.WebApi.csproj",
+              "RelativeDocumentMoniker": "Library.WebApi\\Library.WebApi.csproj",
+              "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Library.WebApi.csproj",
+              "RelativeToolTip": "Library.WebApi\\Library.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-09T12:43:02.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "Library.WebApi\\Program.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Program.cs",
               "RelativeToolTip": "Library.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T10:38:58.106Z",
               "EditorCaption": ""
@@ -57,40 +74,40 @@
               "RelativeDocumentMoniker": "Library.Service\\BookService.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Service\\BookService.cs",
               "RelativeToolTip": "Library.Service\\BookService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T08:23:17.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\BookRepository.cs",
               "RelativeDocumentMoniker": "Library.Repository\\BookRepository.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\BookRepository.cs",
               "RelativeToolTip": "Library.Repository\\BookRepository.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAowKYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T07:58:25.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Library.WebApi\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.WebApi\\Controllers\\BookController.cs",
               "RelativeToolTip": "Library.WebApi\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-05T10:10:59.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\IBookRepository.cs",
               "RelativeDocumentMoniker": "Library.Repository.Common\\IBookRepository.cs",
@@ -98,11 +115,12 @@
               "RelativeToolTip": "Library.Repository.Common\\IBookRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T04:41:17.322Z"
+              "WhenOpened": "2026-06-09T04:41:17.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BookFilter.cs",
               "DocumentMoniker": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\BookFilter.cs",
               "RelativeDocumentMoniker": "Library.Common\\BookFilter.cs",
@@ -110,7 +128,8 @@
               "RelativeToolTip": "Library.Common\\BookFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:11:28.384Z"
+              "WhenOpened": "2026-06-08T11:11:28.384Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,7 +1,9 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Library.Repository;
 using Library.Repository.Common;
-using Library.Service.Common;
 using Library.Service;
+using Library.Service.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<IBookRepository, BookRepository>();
-builder.Services.AddTransient<IBookService, BookService>();
+//builder.Services.AddTransient<IBookRepository, BookRepository>();
+//builder.Services.AddTransient<IBookService, BookService>();
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+    containerBuilder.RegisterType<BookRepository>().As<IBookRepository>();
+    containerBuilder.RegisterType<BookService>().As<IBookService>();
+});
 
 var app = builder.Build();
 
