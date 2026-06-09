@@ -9,7 +9,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Library.Common\Library.Common.csproj" />
     <ProjectReference Include="..\Library.Models\Library.Models.csproj" />
+    <ProjectReference Include="..\Library.Repository.Common\Library.Repository.Common.csproj" />
     <ProjectReference Include="..\Library.Repository\Library.Repository.csproj" />
+    <ProjectReference Include="..\Library.Service.Common\Library.Service.Common.csproj" />
   </ItemGroup>
 
 </Project>

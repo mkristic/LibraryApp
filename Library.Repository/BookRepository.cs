@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using Library.Common;
 using Library.Models;
 using Npgsql;
+using Library.Repository.Common;
 
 namespace Library.Repository
 {
-    public class BookRepository
+    public class BookRepository : IBookRepository
     {
         private readonly string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=praksa;Database=Library";
 

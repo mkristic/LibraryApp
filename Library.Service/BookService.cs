@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Reflection.Metadata.BlobBuilder;
 using Library.Common;
+using Library.Service.Common;
 
 namespace Library.Service
 {
-    public class BookService
+    public class BookService : IBookService
     {
         private readonly BookRepository bookRepository = new BookRepository();
 

@@ -96,6 +96,7 @@
         "dependencies": {
           "Library.Common": "1.0.0",
           "Library.Models": "1.0.0",
+          "Library.Repository.Common": "1.0.0",
           "Npgsql": "10.0.3"
         },
         "compile": {
@@ -103,6 +104,34 @@
         },
         "runtime": {
           "bin/placeholder/Library.Repository.dll": {}
+        }
+      },
+      "Library.Repository.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Library.Common": "1.0.0",
+          "Library.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Library.Repository.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Repository.Common.dll": {}
+        }
+      },
+      "Library.Service.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Library.Common": "1.0.0",
+          "Library.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Library.Service.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Service.Common.dll": {}
         }
       }
     }
@@ -273,13 +302,25 @@
       "type": "project",
       "path": "../Library.Repository/Library.Repository.csproj",
       "msbuildProject": "../Library.Repository/Library.Repository.csproj"
+    },
+    "Library.Repository.Common/1.0.0": {
+      "type": "project",
+      "path": "../Library.Repository.Common/Library.Repository.Common.csproj",
+      "msbuildProject": "../Library.Repository.Common/Library.Repository.Common.csproj"
+    },
+    "Library.Service.Common/1.0.0": {
+      "type": "project",
+      "path": "../Library.Service.Common/Library.Service.Common.csproj",
+      "msbuildProject": "../Library.Service.Common/Library.Service.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Library.Common >= 1.0.0",
       "Library.Models >= 1.0.0",
-      "Library.Repository >= 1.0.0"
+      "Library.Repository >= 1.0.0",
+      "Library.Repository.Common >= 1.0.0",
+      "Library.Service.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -320,8 +361,14 @@
             "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj": {
               "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj"
             },
+            "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj": {
+              "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj"
+            },
             "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\Library.Repository.csproj": {
               "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\Library.Repository.csproj"
+            },
+            "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Service.Common\\Library.Service.Common.csproj": {
+              "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Service.Common\\Library.Service.Common.csproj"
             }
           }
         }
