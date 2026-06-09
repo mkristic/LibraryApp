@@ -8,9 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "Library.Service/1.0.0": {
         "dependencies": {
-          "Library.Common": "1.0.0",
-          "Library.Models": "1.0.0",
-          "Library.Repository": "1.0.0"
+          "Library.Repository": "1.0.0",
+          "Library.Service.Common": "1.0.0"
         },
         "runtime": {
           "Library.Service.dll": {}
@@ -73,12 +72,35 @@
       },
       "Library.Repository/1.0.0": {
         "dependencies": {
-          "Library.Common": "1.0.0",
-          "Library.Models": "1.0.0",
+          "Library.Repository.Common": "1.0.0",
           "Npgsql": "10.0.3"
         },
         "runtime": {
           "Library.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Library.Repository.Common/1.0.0": {
+        "dependencies": {
+          "Library.Common": "1.0.0",
+          "Library.Models": "1.0.0"
+        },
+        "runtime": {
+          "Library.Repository.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Library.Service.Common/1.0.0": {
+        "dependencies": {
+          "Library.Common": "1.0.0",
+          "Library.Models": "1.0.0"
+        },
+        "runtime": {
+          "Library.Service.Common.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -131,6 +153,16 @@
       "sha512": ""
     },
     "Library.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Repository.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Service.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

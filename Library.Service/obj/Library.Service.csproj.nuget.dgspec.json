@@ -234,12 +234,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\Library.Common.csproj": {
-                "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\Library.Common.csproj"
-              },
-              "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj": {
-                "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj"
-              },
               "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj": {
                 "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj"
               }
@@ -387,15 +381,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\Library.Common.csproj": {
-                "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Common\\Library.Common.csproj"
-              },
-              "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj": {
-                "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Models\\Library.Models.csproj"
-              },
-              "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository.Common\\Library.Repository.Common.csproj"
-              },
               "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\Library.Repository.csproj": {
                 "projectPath": "C:\\Users\\Marija\\source\\repos\\LibraryApp\\Library.Repository\\Library.Repository.csproj"
               },

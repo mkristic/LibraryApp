@@ -1,10 +1,16 @@
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Service.deps.json
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Service.dll
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Service.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Common.dll
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Models.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Repository.Common.dll
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Repository.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Service.Common.dll
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Common.pdb
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Models.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Repository.Common.pdb
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Repository.pdb
+C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Service.Common.pdb
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\Library.Service.csproj.AssemblyReference.cache
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\Library.Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\Library.Service.AssemblyInfoInputs.cache
@@ -16,5 +22,3 @@ C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\Library
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\refint\Library.Service.dll
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\Library.Service.pdb
 C:\Users\Marija\source\repos\LibraryApp\Library.Service\obj\Debug\net8.0\ref\Library.Service.dll
-C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Common.dll
-C:\Users\Marija\source\repos\LibraryApp\Library.Service\bin\Debug\net8.0\Library.Common.pdb

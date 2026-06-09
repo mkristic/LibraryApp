@@ -7,14 +7,44 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Library.Service.Common/1.0.0": {
+        "dependencies": {
+          "Library.Common": "1.0.0",
+          "Library.Models": "1.0.0"
+        },
         "runtime": {
           "Library.Service.Common.dll": {}
+        }
+      },
+      "Library.Common/1.0.0": {
+        "runtime": {
+          "Library.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Library.Models/1.0.0": {
+        "runtime": {
+          "Library.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Library.Service.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

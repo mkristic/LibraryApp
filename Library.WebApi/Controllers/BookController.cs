@@ -5,20 +5,27 @@ using System.Net;
 using Library.Models;
 using Library.Service;
 using Library.Common;
+using Library.Service.Common;
 
 namespace Library.WebApi.Controllers
 {
     [ApiController]
     [Route("books")]
     public class BookController : ControllerBase
-    {               
+    {
+        private readonly IBookService _bookService;
+
+        public BookController(IBookService bookService)
+        {
+            _bookService = bookService;
+        }
+
         [HttpGet("GetBooks")]
         public async Task<IActionResult> GetAsync()
         {
             try
-            {
-                var bookService = new BookService();
-                var books = await bookService.GetAllAsync();
+            {                
+                var books = await _bookService.GetAllAsync();
 
                 return Ok(books);
             }
@@ -33,8 +40,7 @@ namespace Library.WebApi.Controllers
         {
             try
             {
-                var bookService = new BookService();
-                var books = await bookService.GetFilteredAsync(filter);
+                var books = await _bookService.GetFilteredAsync(filter);
 
                 if (!books.Any())
                 {
@@ -54,8 +60,7 @@ namespace Library.WebApi.Controllers
         {
             try
             {
-                var bookService = new BookService();
-                var book = await bookService.GetByIdAsync(id);
+                var book = await _bookService.GetByIdAsync(id);
 
                 if (book == null)
                 {
@@ -75,8 +80,7 @@ namespace Library.WebApi.Controllers
         {
             try 
             {
-                var bookService = new BookService();
-                var isAdded = await bookService.AddAsync(book);
+                var isAdded = await _bookService.AddAsync(book);
 
                 if (!isAdded)
                 {
@@ -96,8 +100,7 @@ namespace Library.WebApi.Controllers
         {
             try 
             {
-                var bookService = new BookService();
-                var isUpdated = await bookService.UpdateAsync(id, updatedBook);
+                var isUpdated = await _bookService.UpdateAsync(id, updatedBook);
 
                 if (!isUpdated)
                 {
@@ -118,8 +121,7 @@ namespace Library.WebApi.Controllers
         {
             try
             {
-                var bookService = new BookService();
-                var isDeleted = await bookService.DeleteAsync(id);
+                var isDeleted = await _bookService.DeleteAsync(id);
 
                 if (!isDeleted)
                 {
