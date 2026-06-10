@@ -4,6 +4,8 @@ using Library.Repository;
 using Library.Repository.Common;
 using Library.Service;
 using Library.Service.Common;
+using Library.WebApi.Mapping;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(cfg => { }, typeof(BookMappingProfile));
 
 //builder.Services.AddTransient<IBookRepository, BookRepository>();
 //builder.Services.AddTransient<IBookService, BookService>();

@@ -6,6 +6,8 @@ using Library.Models;
 using Library.Service;
 using Library.Common;
 using Library.Service.Common;
+using Library.WebApi.RestModels;
+using AutoMapper;
 
 namespace Library.WebApi.Controllers
 {
@@ -14,10 +16,12 @@ namespace Library.WebApi.Controllers
     public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
+        private readonly IMapper _mapper;
 
-        public BookController(IBookService bookService)
+        public BookController(IBookService bookService, IMapper mapper)
         {
             _bookService = bookService;
+            _mapper = mapper;   
         }
 
         [HttpGet("GetBooks")]
@@ -76,10 +80,11 @@ namespace Library.WebApi.Controllers
         }
         
         [HttpPost("PostBook")]
-        public async Task<IActionResult> PostAsync([FromBody] Book book)
+        public async Task<IActionResult> PostAsync([FromBody] BookCreateDto bookDto)
         {
             try 
             {
+                var book = _mapper.Map<Book>(bookDto);
                 var isAdded = await _bookService.AddAsync(book);
 
                 if (!isAdded)
@@ -94,13 +99,14 @@ namespace Library.WebApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAsync(int id, [FromBody] Book updatedBook)
+        public async Task<IActionResult> PutAsync(int id, [FromBody] BookUpdateDto bookDto)
         {
             try 
             {
-                var isUpdated = await _bookService.UpdateAsync(id, updatedBook);
+                var book = _mapper.Map<Book>(bookDto);
+                var isUpdated = await _bookService.UpdateAsync(id, book);
 
                 if (!isUpdated)
                 {
@@ -115,7 +121,7 @@ namespace Library.WebApi.Controllers
             }
 
         }
-
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {

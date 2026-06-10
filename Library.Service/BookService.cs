@@ -9,6 +9,7 @@ using static System.Reflection.Metadata.BlobBuilder;
 using Library.Common;
 using Library.Service.Common;
 using Library.Repository.Common;
+using Library.Common.Utils;
 
 namespace Library.Service
 {
@@ -37,6 +38,8 @@ namespace Library.Service
 
         public async Task<bool> AddAsync(Book newBook)
         {
+            newBook.Id = RandomNumber.GetRandomNumber();
+
             return await _bookRepository.AddAsync(newBook);
         }
 
