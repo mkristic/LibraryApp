@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Library</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <hr>      
+
+    <div id="form-div">
+        <h2>Add books</h2>
+
+        <form id="addForm" action="" >
+            <div class="form-row">
+                <label for="title">Book: </label>
+                <input id="titleInput" type="text" placeholder="book" name="title" required>
+            </div>
+            <div class="form-row">
+                <label for="author">Author: </label>
+                <input id="authorInput" type="text" placeholder="author" name="author">
+            </div>
+            <div class="form-row">
+                <label for="publicationYear">Publication Year: </label>
+                <input id="publicationYearInput" type="text" placeholder="publication year" name="publicationYear">
+            </div>
+            <br>
+            <button id="submitButton" type="submit">Add book</button>
+        </form>
+    </div> 
+    <br><hr>
+        
+    <div id="table-div">
+        <h2>All books</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th><h3>Book</h3></th>
+                    <th><h3>Author</h3></th>
+                    <th><h3>Publication Year</h3></th>
+                    <th><h3>Actions</h3></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>    
+
+    <script src="script.js"></script>    
+</body>
+</html>
